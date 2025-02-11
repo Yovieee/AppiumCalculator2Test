@@ -1,4 +1,4 @@
-package com.juaracoding.ujianjf;
+package com.juaracoding.appiumcalculator;
 
 /**
  * Hello world!
