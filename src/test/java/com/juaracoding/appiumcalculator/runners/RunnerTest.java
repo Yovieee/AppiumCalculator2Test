@@ -13,7 +13,8 @@ import io.cucumber.testng.CucumberOptions;
   },
   plugin = {
     "pretty", 
-    "html:target/cucumber-reporting-mobile/reporting.html"
+    "html:target/cucumber-reporting-mobile/reporting.html",
+    "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
   }
 )
 public class RunnerTest extends AbstractTestNGCucumberTests {
