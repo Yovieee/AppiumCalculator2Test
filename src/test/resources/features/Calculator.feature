@@ -17,6 +17,6 @@ Feature: Calculator Samsung
     Then saya mendapatkan hasil "<result>"
 
     Examples:
-    |val1 | val2 | result |
-    |10   | 20   | 30     |
-    |200  | 30   | 230    |
+    | val1 | val2 | result |
+    |  10  |  20  |   30   |
+    |  200 |  30  |   230  |
