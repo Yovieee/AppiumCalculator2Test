@@ -48,7 +48,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Feb 14, 2025 09:58:20 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Feb 14, 2025 10:03:00 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -63,7 +63,7 @@
 				<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+										<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -107,12 +107,12 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='$100%'>
-                    <span class='strong'>1</span> features passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='$0%'>
+                    <span class='strong'>0</span> features passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> features failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>
+                    1</span> features failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped
                 </div>
@@ -125,12 +125,12 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>3</span> scenarios passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='33%'>
+                    <span class='strong'>1</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> scenarios failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='66%'>
+                    2</span> scenarios failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -145,14 +145,14 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>18</span> steps passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='44%'>
+                    <span class='strong'>8</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> steps failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='11%'>
+                    2</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='44%'>
+                    8</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> others
                 </div>
@@ -173,11 +173,11 @@
 	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Calculator Samsung</span>
-						<span class='test-time'>Feb 14, 2025 09:58:25 PM</span>
-						<span class='test-status right pass'>Pass</span>
+						<span class='test-time'>Feb 14, 2025 10:03:05 PM</span>
+						<span class='test-status right fail'>Fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -189,7 +189,7 @@
 
 <div class='scenario node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 00 04.380</span>
+	<span class='duration right label'>00 00 05.109</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Hitung Penjumlahan Sederhana</div>
 	</div>
@@ -229,19 +229,19 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario outline node' test-id='10' status='pass'>
+<div class='scenario outline node' test-id='10' status='fail'>
 
-	<span class='duration right label'>00 00 11.925</span>
+	<span class='duration right label'>00 00 01.389</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Menjumlahkan 10 dan 20 dengan data driven test</div>
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario Outline: Menjumlahkan dengan data driven test</div>
 	</div>
 	
 		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>val1</td><td>val2</td><td>result</td></tr><tr><td>10</td><td>20</td><td>30</td></tr><tr><td>200</td><td>30</td><td>230</td></tr></table></div>
 	
 	
 	<ul class='steps'>
-		<li test-id='11' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Menjumlahkan 10 dan 20 dengan data driven test</div>
+		<li test-id='11' class='node scenario Fail' status='Fail'>
+			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Menjumlahkan dengan data driven test</div>
 
 
 			<ul class='gc steps'>
@@ -249,30 +249,35 @@
 					<h6 class="step-name" title="com.juaracoding.appiumcalculator.steps.PenjumlahanSteps.clickButtonClear()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given saya menekan tombol clear</h6>
 
 				</li>
-				<li test-id='14' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.juaracoding.appiumcalculator.steps.PenjumlahanSteps.clickButtonNumber(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And saya menekan tombol nilai "10"</h6>
+				<li test-id='14' class='gc and Fail' status='Fail'>
+					<h6 class="step-name" title=""><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>And saya menekan tombol nilai 10</h6>
 
+							<div class="node-step">Step undefined</div>
 				</li>
-				<li test-id='15' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.juaracoding.appiumcalculator.steps.PenjumlahanSteps.clickButtonPlus()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And saya menekan tombol plus</h6>
+				<li test-id='15' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title="com.juaracoding.appiumcalculator.steps.PenjumlahanSteps.clickButtonPlus()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And saya menekan tombol plus</h6>
 
+							<div class="node-step">Step skipped</div>
 				</li>
-				<li test-id='16' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.juaracoding.appiumcalculator.steps.PenjumlahanSteps.clickButtonNumber(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And saya menekan tombol nilai "20"</h6>
+				<li test-id='16' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title=""><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And saya menekan tombol nilai 20</h6>
 
+							<div class="node-step">Step skipped</div>
 				</li>
-				<li test-id='17' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="com.juaracoding.appiumcalculator.steps.PenjumlahanSteps.clickButtonEqual()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When saya menekan tombol sama dengan</h6>
+				<li test-id='17' class='gc when Skip' status='Skip'>
+					<h6 class="step-name" title="com.juaracoding.appiumcalculator.steps.PenjumlahanSteps.clickButtonEqual()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>When saya menekan tombol sama dengan</h6>
 
+							<div class="node-step">Step skipped</div>
 				</li>
-				<li test-id='18' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="com.juaracoding.appiumcalculator.steps.PenjumlahanSteps.getResult(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then saya mendapatkan hasil "30"</h6>
+				<li test-id='18' class='gc then Skip' status='Skip'>
+					<h6 class="step-name" title=""><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then saya mendapatkan hasil 30</h6>
 
+							<div class="node-step">Step skipped</div>
 				</li>
 			</ul>
 		</li>
-		<li test-id='19' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Menjumlahkan 10 dan 20 dengan data driven test</div>
+		<li test-id='19' class='node scenario Fail' status='Fail'>
+			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Menjumlahkan dengan data driven test</div>
 
 
 			<ul class='gc steps'>
@@ -280,25 +285,30 @@
 					<h6 class="step-name" title="com.juaracoding.appiumcalculator.steps.PenjumlahanSteps.clickButtonClear()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given saya menekan tombol clear</h6>
 
 				</li>
-				<li test-id='22' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.juaracoding.appiumcalculator.steps.PenjumlahanSteps.clickButtonNumber(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And saya menekan tombol nilai "200"</h6>
+				<li test-id='22' class='gc and Fail' status='Fail'>
+					<h6 class="step-name" title=""><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>And saya menekan tombol nilai 200</h6>
 
+							<div class="node-step">Step undefined</div>
 				</li>
-				<li test-id='23' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.juaracoding.appiumcalculator.steps.PenjumlahanSteps.clickButtonPlus()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And saya menekan tombol plus</h6>
+				<li test-id='23' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title="com.juaracoding.appiumcalculator.steps.PenjumlahanSteps.clickButtonPlus()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And saya menekan tombol plus</h6>
 
+							<div class="node-step">Step skipped</div>
 				</li>
-				<li test-id='24' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.juaracoding.appiumcalculator.steps.PenjumlahanSteps.clickButtonNumber(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And saya menekan tombol nilai "30"</h6>
+				<li test-id='24' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title=""><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And saya menekan tombol nilai 30</h6>
 
+							<div class="node-step">Step skipped</div>
 				</li>
-				<li test-id='25' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="com.juaracoding.appiumcalculator.steps.PenjumlahanSteps.clickButtonEqual()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When saya menekan tombol sama dengan</h6>
+				<li test-id='25' class='gc when Skip' status='Skip'>
+					<h6 class="step-name" title="com.juaracoding.appiumcalculator.steps.PenjumlahanSteps.clickButtonEqual()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>When saya menekan tombol sama dengan</h6>
 
+							<div class="node-step">Step skipped</div>
 				</li>
-				<li test-id='26' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="com.juaracoding.appiumcalculator.steps.PenjumlahanSteps.getResult(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then saya mendapatkan hasil "230"</h6>
+				<li test-id='26' class='gc then Skip' status='Skip'>
+					<h6 class="step-name" title=""><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then saya mendapatkan hasil 230</h6>
 
+							<div class="node-step">Step skipped</div>
 				</li>
 			</ul>
 		</li>
@@ -354,19 +364,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Feb 14, 2025 09:58:20 PM</div>
+					<div class='panel-lead'>Feb 14, 2025 10:03:00 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Feb 14, 2025 09:58:42 PM</div>
+			 		<div class='panel-lead'>Feb 14, 2025 10:03:12 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 21.690</div>
+					<div class='panel-lead'>00 00 12.334</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -398,34 +408,34 @@
 		<script>
 			var statusGroup = {
                 parentCount: 1,
-				passParent: 1,
-				failParent: 0,
+				passParent: 0,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
 				childCount: 3,
-				passChild: 3,
-				failChild: 0,
+				passChild: 1,
+				failChild: 2,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
 				grandChildCount: 18,
-				passGrandChild: 18,
-				failGrandChild: 0,
+				passGrandChild: 8,
+				failGrandChild: 2,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 0,
+				skipGrandChild: 8,
 				infoGrandChild: 0,
 			};
 			</script>
 		
 		<script>
 			var timeline = {
-			        "Calculator Samsung":16.321
+			        "Calculator Samsung":6.55
 			};
 		</script>
 		
