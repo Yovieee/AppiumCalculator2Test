@@ -48,7 +48,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Feb 11, 2025 10:46:56 AM</span>
+			<span class='label blue darken-3 suite-start-time'>Feb 14, 2025 09:58:20 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -176,7 +176,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Calculator Samsung</span>
-						<span class='test-time'>Feb 11, 2025 10:47:05 AM</span>
+						<span class='test-time'>Feb 14, 2025 09:58:25 PM</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -189,7 +189,7 @@
 
 <div class='scenario node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 00 06.256</span>
+	<span class='duration right label'>00 00 04.380</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Hitung Penjumlahan Sederhana</div>
 	</div>
@@ -229,87 +229,78 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='10' status='pass'>
+<div class='scenario outline node' test-id='10' status='pass'>
 
-	<span class='duration right label'>00 00 06.325</span>
+	<span class='duration right label'>00 00 11.925</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Menjumlahkan 10 dan 20 dengan data driven test</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Menjumlahkan 10 dan 20 dengan data driven test</div>
 	</div>
 	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>val1</td><td>val2</td><td>result</td></tr><tr><td>10</td><td>20</td><td>30</td></tr><tr><td>200</td><td>30</td><td>230</td></tr></table></div>
 	
 	
 	<ul class='steps'>
-		<li test-id='12' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(com.juaracoding.appiumcalculator.steps.PenjumlahanSteps.clickButtonClear())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given saya menekan tombol clear</div>
+		<li test-id='11' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Menjumlahkan 10 dan 20 dengan data driven test</div>
 
 
+			<ul class='gc steps'>
+				<li test-id='13' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.juaracoding.appiumcalculator.steps.PenjumlahanSteps.clickButtonClear()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given saya menekan tombol clear</h6>
+
+				</li>
+				<li test-id='14' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.juaracoding.appiumcalculator.steps.PenjumlahanSteps.clickButtonNumber(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And saya menekan tombol nilai "10"</h6>
+
+				</li>
+				<li test-id='15' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.juaracoding.appiumcalculator.steps.PenjumlahanSteps.clickButtonPlus()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And saya menekan tombol plus</h6>
+
+				</li>
+				<li test-id='16' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.juaracoding.appiumcalculator.steps.PenjumlahanSteps.clickButtonNumber(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And saya menekan tombol nilai "20"</h6>
+
+				</li>
+				<li test-id='17' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.juaracoding.appiumcalculator.steps.PenjumlahanSteps.clickButtonEqual()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When saya menekan tombol sama dengan</h6>
+
+				</li>
+				<li test-id='18' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.juaracoding.appiumcalculator.steps.PenjumlahanSteps.getResult(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then saya mendapatkan hasil "30"</h6>
+
+				</li>
+			</ul>
 		</li>
-		<li test-id='13' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.juaracoding.appiumcalculator.steps.PenjumlahanSteps.clickButtonNumber(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And saya menekan tombol nilai "10"</div>
+		<li test-id='19' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Menjumlahkan 10 dan 20 dengan data driven test</div>
 
 
-		</li>
-		<li test-id='14' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.juaracoding.appiumcalculator.steps.PenjumlahanSteps.clickButtonPlus())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And saya menekan tombol plus</div>
+			<ul class='gc steps'>
+				<li test-id='21' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.juaracoding.appiumcalculator.steps.PenjumlahanSteps.clickButtonClear()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given saya menekan tombol clear</h6>
 
+				</li>
+				<li test-id='22' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.juaracoding.appiumcalculator.steps.PenjumlahanSteps.clickButtonNumber(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And saya menekan tombol nilai "200"</h6>
 
-		</li>
-		<li test-id='15' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.juaracoding.appiumcalculator.steps.PenjumlahanSteps.clickButtonNumber(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And saya menekan tombol nilai "20"</div>
+				</li>
+				<li test-id='23' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.juaracoding.appiumcalculator.steps.PenjumlahanSteps.clickButtonPlus()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And saya menekan tombol plus</h6>
 
+				</li>
+				<li test-id='24' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.juaracoding.appiumcalculator.steps.PenjumlahanSteps.clickButtonNumber(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And saya menekan tombol nilai "30"</h6>
 
-		</li>
-		<li test-id='16' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(com.juaracoding.appiumcalculator.steps.PenjumlahanSteps.clickButtonEqual())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When saya menekan tombol sama dengan</div>
+				</li>
+				<li test-id='25' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.juaracoding.appiumcalculator.steps.PenjumlahanSteps.clickButtonEqual()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When saya menekan tombol sama dengan</h6>
 
+				</li>
+				<li test-id='26' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.juaracoding.appiumcalculator.steps.PenjumlahanSteps.getResult(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then saya mendapatkan hasil "230"</h6>
 
-		</li>
-		<li test-id='17' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(com.juaracoding.appiumcalculator.steps.PenjumlahanSteps.getResult(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then saya mendapatkan hasil "30"</div>
-
-
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='18' status='pass'>
-
-	<span class='duration right label'>00 00 07.789</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Menjumlahkan 200 dan 30 dengan data driven test</div>
-	</div>
-	
-	
-	
-	<ul class='steps'>
-		<li test-id='20' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(com.juaracoding.appiumcalculator.steps.PenjumlahanSteps.clickButtonClear())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given saya menekan tombol clear</div>
-
-
-		</li>
-		<li test-id='21' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.juaracoding.appiumcalculator.steps.PenjumlahanSteps.clickButtonNumber(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And saya menekan tombol nilai "200"</div>
-
-
-		</li>
-		<li test-id='22' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.juaracoding.appiumcalculator.steps.PenjumlahanSteps.clickButtonPlus())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And saya menekan tombol plus</div>
-
-
-		</li>
-		<li test-id='23' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.juaracoding.appiumcalculator.steps.PenjumlahanSteps.clickButtonNumber(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And saya menekan tombol nilai "30"</div>
-
-
-		</li>
-		<li test-id='24' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(com.juaracoding.appiumcalculator.steps.PenjumlahanSteps.clickButtonEqual())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When saya menekan tombol sama dengan</div>
-
-
-		</li>
-		<li test-id='25' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(com.juaracoding.appiumcalculator.steps.PenjumlahanSteps.getResult(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then saya mendapatkan hasil "230"</div>
-
-
+				</li>
+			</ul>
 		</li>
 	</ul>
 </div>
@@ -363,19 +354,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Feb 11, 2025 10:46:56 AM</div>
+					<div class='panel-lead'>Feb 14, 2025 09:58:20 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Feb 11, 2025 10:47:26 AM</div>
+			 		<div class='panel-lead'>Feb 14, 2025 09:58:42 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 29.768</div>
+					<div class='panel-lead'>00 00 21.690</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -434,7 +425,7 @@
 		
 		<script>
 			var timeline = {
-			        "Calculator Samsung":20.398
+			        "Calculator Samsung":16.321
 			};
 		</script>
 		

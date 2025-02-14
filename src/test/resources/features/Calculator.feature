@@ -8,18 +8,15 @@ Feature: Calculator Samsung
     When saya menekan tombol sama dengan
     Then saya mendapatkan hasil "14"
 
-  Scenario: Menjumlahkan 10 dan 20 dengan data driven test
+  Scenario Outline: Menjumlahkan dengan data driven test
     Given saya menekan tombol clear
-    And saya menekan tombol nilai "10"
+    And saya menekan tombol nilai "<val1>"
     And saya menekan tombol plus
-    And saya menekan tombol nilai "20"
+    And saya menekan tombol nilai "<val2>"
     When saya menekan tombol sama dengan
-    Then saya mendapatkan hasil "30"
+    Then saya mendapatkan hasil "<result>"
 
-  Scenario: Menjumlahkan 200 dan 30 dengan data driven test
-    Given saya menekan tombol clear
-    And saya menekan tombol nilai "200"
-    And saya menekan tombol plus
-    And saya menekan tombol nilai "30"
-    When saya menekan tombol sama dengan
-    Then saya mendapatkan hasil "230"
+    Examples:
+    |val1 | val2 | result |
+    |10   | 20   | 30     |
+    |200  | 30   | 230    |
